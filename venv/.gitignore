@@ -1,12 +1,15 @@
 # Ambiente virtual
-venv/
+venv/ 
+Lib/site-packages
+Scripts 
 
 # Arquivos do Django
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-db.sqlite3
+db.sqlite3 
+pyvenv.cfg
 
 # VS Code
 .vscode/
