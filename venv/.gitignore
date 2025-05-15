@@ -1,5 +1,5 @@
 # Ambiente virtual
-venv/ 
+venv
 Lib/site-packages
 Scripts 
 
@@ -16,4 +16,6 @@ pyvenv.cfg
 
 # Arquivos do sistema
 .DS_Store
-Thumbs.db
+Thumbs.db 
+db.sqlite3 
+manage.py
