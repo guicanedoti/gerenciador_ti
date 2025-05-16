@@ -5,3 +5,4 @@ admin.site.register(Departamento)
 admin.site.register(Sala)
 admin.site.register(Responsavel)
 admin.site.register(Equipamento)
+

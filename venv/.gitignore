@@ -1,21 +1,2 @@
-# Ambiente virtual
-venv
-Lib/site-packages
-Scripts 
-
-# Arquivos do Django
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-db.sqlite3 
-pyvenv.cfg
-
-# VS Code
-.vscode/
-
-# Arquivos do sistema
-.DS_Store
-Thumbs.db 
-db.sqlite3 
-manage.py
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
