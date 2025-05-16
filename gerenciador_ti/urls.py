@@ -3,6 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('equipamentos/', include('equipamentos.urls')),  # já está aí
-    path('', include('equipamentos.urls')),  # <-- adiciona essa linha!
+    path('', include('equipamentos.urls')),  # ✅ Redireciona para as URLs do app "equipamentos"
 ]

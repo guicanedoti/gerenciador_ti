@@ -5,7 +5,7 @@ from .models import Equipamento
 
 class EquipamentoListView(LoginRequiredMixin, ListView): 
     model = Equipamento
-    template_name = 'equipamentod/lista_equipamentos.html'
+    template_name = 'equipamentos/lista_equipamentos.html'
     context_object_name = 'equipamentos'
 
 class EquipamentoCreateView(LoginRequiredMixin, CreateView): 
