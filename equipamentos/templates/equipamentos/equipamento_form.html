@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Cadastrar Equipamento{% endblock %}
+{% block content %}
+<div class="card p-4 shadow hover-expand">
+    <h3 class="mb-4">{{ form.instance.pk|yesno:"Editar Equipamento,Cadastrar Equipamento" }}</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success hover-button">Salvar</button>
+        <a href="{% url 'equipment_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
