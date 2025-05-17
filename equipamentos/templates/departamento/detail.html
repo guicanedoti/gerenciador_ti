@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Detalhes do Departamento</h1>
+<p><strong>ID:</strong> {{ departamento.id }}</p>
+<p><strong>Nome:</strong> {{ departamento.nome }}</p>
+
+<a href="{% url 'equipamentos:departamento_update' departamento.pk %}" class="btn btn-warning">Editar</a>
+<a href="{% url 'equipamentos:departamento_delete' departamento.pk %}" class="btn btn-danger">Excluir</a>
+<a href="{% url 'equipamentos:departamento_list' %}" class="btn btn-secondary">Voltar</a>
+{% endblock %}

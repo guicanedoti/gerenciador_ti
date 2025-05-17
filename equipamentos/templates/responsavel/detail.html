@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Detalhes do responsável</h1>
+<p><strong>ID:</strong> {{ responsavel.id }}</p>
+<p><strong>Nome:</strong> {{ responsavel.nome }}</p>
+
+<a href="{% url 'equipamentos:responsavel_update' responsavel.pk %}" class="btn btn-warning">Editar</a>
+<a href="{% url 'equipamentos:responsavel_delete' responsavel.pk %}" class="btn btn-danger">Excluir</a>
+<a href="{% url 'equipamentos:responsavel_list' %}" class="btn btn-secondary">Voltar</a>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Responsáveis </h1>
+<a href="{% url 'equipamentos:responsavel_create' %}" class="btn btn-primary mb-3">Novo responsável</a>
+<table class="table table-striped">
+    <thead>
+        <tr><th>ID</th><th>Nome</th><th>Ações</th></tr>
+    </thead>
+    <tbody>
+        {% for responsavel in responsavel %}
+        <tr>
+            <td>{{ responsavel.id }}</td>
+            <td>{{ responsavel.nome }}</td>
+            <td>
+                <a href="{% url 'equipamentos:responsavel_detail' responsavel.pk %}" class="btn btn-info btn-sm">Detalhes</a>
+                <a href="{% url 'equipamentos:responsavel_update' responsavel.pk %}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{% url 'equipamentos:responsavel_delete' responsavel.pk %}" class="btn btn-danger btn-sm">Excluir</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="3">Nenhum responsável cadastrado.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="mb-4">Bem-vindo ao Sistema de Gerenciamento de Equipamentos</h1>
+    <p class="lead">Use o menu acima para navegar entre Departamentos, Salas, Responsáveis, Equipamentos e Alocações.</p>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="list-group">
+                <a href="{% url 'equipamentos:departamento_list' %}" class="list-group-item list-group-item-action">Departamentos</a>
+                <a href="{% url 'equipamentos:sala_list' %}" class="list-group-item list-group-item-action">Salas</a>
+                <a href="{% url 'equipamentos:responsavel_list' %}" class="list-group-item list-group-item-action">Responsáveis</a>
+                <a href="{% url 'equipamentos:equipamento_list' %}" class="list-group-item list-group-item-action">Equipamentos</a>
+                <a href="{% url 'equipamentos:alocacao_list' %}" class="list-group-item list-group-item-action">Alocações</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

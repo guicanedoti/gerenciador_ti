@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Detalhes da Sala</h1>
+<p><strong>ID:</strong> {{ sala.id }}</p>
+<p><strong>Nome:</strong> {{ sala.nome }}</p>
+
+<a href="{% url 'equipamentos:sala_update' sala.pk %}" class="btn btn-warning">Editar</a>
+<a href="{% url 'equipamentos:sala_delete' sala.pk %}" class="btn btn-danger">Excluir</a>
+<a href="{% url 'equipamentos:sala_list' %}" class="btn btn-secondary">Voltar</a>
+{% endblock %}
