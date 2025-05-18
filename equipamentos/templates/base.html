@@ -17,13 +17,13 @@
                 <li class="nav-item"><a class="nav-link" href="{% url 'equipamentos:departamento_list' %}">Departamentos</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'equipamentos:sala_list' %}">Salas</a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'equipamentos:responsavel_list' %}">Responsáveis</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'equipamentos:equipamento_list' %}">Equipamentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'equipamentos:equipamento_list' %}"> Equipamentos </a></li>
                 <li class="nav-item"><a class="nav-link" href="{% url 'equipamentos:alocacao_list' %}">Alocações</a></li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 {% if user.is_authenticated %}
                 <li class="nav-item"><span class="navbar-text me-2">Olá, {{ user.username }}</span></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Sair</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"></a></li>
                 {% else %}
                 <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
                 {% endif %}
