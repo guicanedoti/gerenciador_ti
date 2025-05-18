@@ -26,10 +26,15 @@ Este projeto é um sistema web desenvolvido com Django para gerenciar os equipam
 
 ## 🔧 Instalação
 
-1. Clone o repositório:
-   ```bash
-   git clone (https://github.com/guicanedoti/gerenciador_ti)
-   cd gerenciador_ti
+  **Exemplo completo de uso:** <p> 
+  
+   **a) Clonar o repositório** <p> 
+    git clone https://github.com/guicanedoti/gerenciador_ti.git <p> 
+    cd gerenciador_ti <br> 
+
+   **b) Instalar as dependencias do projeto** <p> 
+    pip install -r requirements.txt <br> 
+
 
 ## 🧑‍💻 Desenvolvedores
 
